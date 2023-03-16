@@ -65,5 +65,6 @@ solveDampenedWLS<-function(S,B){
     iterations<-iterations+1
     changes<-c(changes,change)
   }
-  return(round(solution/sum(solution),5))
+  res <- round(solution/sum(solution),5)
+  return(res)
 }
