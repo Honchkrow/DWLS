@@ -41,6 +41,5 @@ solveOLS<-function(S,B){
   bzero<-c(rep(0,dim(S)[2]))
   solution<-solve.QP(D,d,A,bzero)$solution
   names(solution)<-colnames(S)
-  print(round(solution/sum(solution),5))
-  return(solution/sum(solution))
+  return(round(solution/sum(solution),5))
 }

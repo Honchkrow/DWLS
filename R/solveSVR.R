@@ -67,6 +67,5 @@ solveSVR<-function(S,B){
   coef[which(coef<0)]<-0
   coef<-as.vector(coef)
   names(coef)<-colnames(S)
-  print(round(coef/sum(coef),5))
-  return(coef/sum(coef))
+  return(round(coef/sum(coef),5))
   }
